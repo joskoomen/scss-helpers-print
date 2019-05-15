@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@mixin helpers-print() {
+  .show-for-print { display : none !important; }
+  
+  @media print {
+    .show-for-print { display : block !important; }
+    .hide-for-print { display : none !important; }
+    
+    table.show-for-print { display : table !important; }
+    thead.show-for-print { display : table-header-group !important; }
+    tbody.show-for-print { display : table-row-group !important; }
+    tr.show-for-print { display : table-row !important; }
+    td.show-for-print { display : table-cell !important; }
+    th.show-for-print { display : table-cell !important; }
+    
+    // Helper to re-allow page breaks in the middle of certain elements (e.g. pre, blockquote, tr)
+    .print-break-inside {
+      page-break-inside : auto;
+    }
+  }
+}

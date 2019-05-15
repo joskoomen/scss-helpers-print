@@ -1,2 +1,2 @@
-# scss-helpers-print
-Scss | Helpers - Print
+# Scss | Helpers - print
+
